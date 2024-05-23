@@ -1,0 +1,12 @@
+.collapse-target {
+    transition: max-height 300ms ease-in-out;
+    overflow: hidden;
+}
+
+.collapse-target[aria-expanded='false'] {
+    max-height: 0;
+}
+
+.collapse-target[aria-expanded='true'] {
+    max-height: 500px;
+}

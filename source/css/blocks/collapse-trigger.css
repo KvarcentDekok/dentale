@@ -1,0 +1,7 @@
+.collapse-trigger--angle {
+    transition: transform 200ms linear;
+}
+
+.collapse-trigger--angle[aria-expanded='true'] {
+    transform: rotate(180deg);
+}

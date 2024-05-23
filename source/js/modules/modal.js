@@ -1,9 +1,11 @@
 function openModal(element) {
     element.classList.add('is-active');
+    element.setAttribute('aria-hidden', 'false');
 }
 
 function closeModal(element) {
     element.classList.remove('is-active');
+    element.setAttribute('aria-hidden', 'true');
 }
 
 function closeAllModals() {

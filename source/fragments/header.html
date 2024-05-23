@@ -1,0 +1,68 @@
+<header>
+    <nav class="navbar is-fixed-top has-shadow" role="navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <svg width="100" height="50" viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0" y="0" width="100" height="50" fill="#f0f0f0"/>
+                </svg>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="Меню" aria-expanded="false" data-target="navbar">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbar" class="navbar-menu">
+            <ul class="navbar-end">
+                <li class="navbar-item p-0 is-align-items-stretch">
+                    @@if (active === 'about') {
+                    <a href="index.html" class="navbar-item is-active" aria-current="page">
+                        О клинике
+                    </a>
+                    }
+
+                    @@if (active !== 'about') {
+                    <a href="index.html" class="navbar-item">
+                        О клинике
+                    </a>
+                    }
+                </li>
+
+                <li class="navbar-item p-0 is-align-items-stretch">
+                    @@if (active === 'service') {
+                    <a href="services.html" class="navbar-item is-active" aria-current="page">
+                        Услуги
+                    </a>
+                    }
+
+                    @@if (active !== 'service') {
+                    <a href="services.html" class="navbar-item">
+                        Услуги
+                    </a>
+                    }
+                </li>
+            </ul>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <ul class="buttons">
+                        <li>
+                            <a href="#" class="button is-primary">
+                                Записаться на приём
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contacts" class="button is-light">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

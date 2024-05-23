@@ -1,2 +1,5 @@
 @import "blocks/home-slider.css";
 @import "blocks/home.css";
+@import "blocks/collapse-trigger.css";
+@import "blocks/collapse-target.css";
+@import "blocks/document.css";

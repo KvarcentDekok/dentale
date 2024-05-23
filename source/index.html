@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="has-navbar-fixed-top">
+<html lang="ru" class="document has-navbar-fixed-top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,59 +11,8 @@
 
     <title>Dentale</title>
 </head>
-<body>
-<header>
-    <nav class="navbar is-fixed-top has-shadow" role="navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="index.html">
-                <svg width="100" height="50" viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0" y="0" width="100" height="50" fill="#f0f0f0"/>
-                </svg>
-            </a>
-
-            <a role="button" class="navbar-burger" aria-label="Меню" aria-expanded="false" data-target="navbar">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div id="navbar" class="navbar-menu">
-            <ul class="navbar-end">
-                <li class="navbar-item p-0 is-align-items-stretch">
-                    <a href="#" class="navbar-item is-active">
-                        О клинике
-                    </a>
-                </li>
-
-                <li class="navbar-item p-0 is-align-items-stretch">
-                    <a href="#" class="navbar-item">
-                        Услуги
-                    </a>
-                </li>
-            </ul>
-
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <ul class="buttons">
-                        <li>
-                            <a href="#" class="button is-primary">
-                                Записаться на приём
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="button is-light">
-                                Контакты
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-</header>
+<body class="document__body">
+@@include('fragments/header.html', {active: 'about'})
 
 <main>
     <section class="hero is-fullheight-with-navbar home">
@@ -324,63 +273,12 @@
         </div>
     </section>
 
-    <section class="section">
-        <div class="container">
-            <div class="fixed-grid has-1-cols has-2-cols-tablet">
-                <div class="grid is-gap-4">
-                    <div class="cell">
-                        <figure class="image is-16by9">
-                            <img src="https://bulma.io/assets/images/placeholders/640x360.png"
-                                 alt="Placeholder image"/>
-                        </figure>
-                    </div>
-
-                    <div class="cell">
-                        <h2 class="title">Контакты</h2>
-
-                        <a href="tel:+79999999999" class="button is-ghost is-large px-0">+7 999 999 99 99</a>
-
-                        <p class="is-size-4">Большой Саввинский переулок дом 12с6</p>
-
-                        <a href="#" class="button is-primary is-large mt-4">Записаться на приём</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @@include('fragments/contacts.html')
 </main>
 
-<footer class="footer has-background-black pb-3">
-    <div class="container">
-        <div class="fixed-grid has-2-cols">
-            <div class="grid">
-                <div class="cell">
-                    <a href="index.html">
-                        <svg width="100" height="50" viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0" y="0" width="100" height="50" fill="#f0f0f0"/>
-                        </svg>
-                    </a>
-                </div>
+@@include('fragments/footer.html')
 
-                <div class="cell">
-                    <ul class="is-display-flex is-gap-2 mb-4">
-                        <li>
-                            <a href="#" class="button is-white">Услуги</a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="button is-white">Запись на приём</a>
-                        </li>
-                    </ul>
-
-                    <p class="has-text-grey">© 2024 Дентале</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<div id="modal-education" class="modal" tabindex="-1" role="dialog" aria-modal="true"
+<div id="modal-education" class="modal" tabindex="-1" role="dialog" aria-modal="true" aria-hidden="true"
      aria-labelledby="modal-education-title">
     <div class="modal-background"></div>
 

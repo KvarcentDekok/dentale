@@ -1,0 +1,13 @@
+.document {
+    min-height: 100vh;
+}
+
+.document__body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.document__footer {
+    margin-top: auto;
+}
