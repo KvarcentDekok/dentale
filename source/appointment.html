@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru" class="document has-navbar-fixed-top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <script src="https://kit.fontawesome.com/975a6e0860.js" crossorigin="anonymous"></script>
+
+    <title>Запись на прём | Dentale</title>
+</head>
+<body class="document__body">
+@@include('fragments/header.html', {active: 'about'})
+
+<main>
+    <section class="hero is-fullheight-with-navbar">
+        <div class="hero-body is-flex-direction-column is-justify-content-center is-align-items-center">
+            <h1 class="title is-size-4-mobile is-size-3-tablet is-size-2-desktop">
+                Запишитесь на приём
+            </h1>
+
+            <p class="subtitle is-size-5 mt-4">
+                Вам позвонит администратор
+            </p>
+
+            <form class="">
+                <div class="field">
+                    <label for="phone" class="label is-large">Номер телефона</label>
+
+                    <div class="control">
+                        <input id="phone" class="input is-large" type="tel" name="phone" placeholder="+7 (999) 999 99 99"
+                               required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="name" class="label is-large">Ваше имя</label>
+
+                    <div class="control">
+                        <input id="name" class="input is-large" type="text" name="name" placeholder="Имя" required>
+                    </div>
+                </div>
+
+                <div class="field mt-6">
+                    <div class="control">
+                        <button type="submit" class="button is-link is-large is-fullwidth">Записаться</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    @@include('fragments/contacts.html')
+</main>
+
+@@include('fragments/footer.html')
+
+<script src="js/general.js"></script>
+<script src="js/appointment.js"></script>
+</body>
+</html>
